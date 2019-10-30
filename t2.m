@@ -16,7 +16,8 @@ R = input("Repeating Times: ");
 drawBackGround(Radius, Width, Length);
 
 % calculate prs
-[score, totalTimes, prs, d_rx, d_bo] = getDisProb(R, N, Radius, Length, Width, true, @unifrnd_circle);
+[score, totalTimes, prs, d_rx, d_bo] = getDisProb(R, N, Radius, Length,...
+    Width, true, @unifrnd_circle);
 
 % add legend
 legend([d_rx, d_bo], {'scored shot', 'missed shot'});
